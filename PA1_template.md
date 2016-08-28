@@ -5,6 +5,8 @@ output:
     keep_md: true
 ---
 
+# Reproducible Research: Peer Assessment 1
+
 ### Assignment Description
 
 This assignment uses data collected from a personal activity monitoring device accumulated at 5 minute intervals over a two month span.  The data was collected anonymously from a single individual during October and November, 2012.  The data includes the number of steps taken at each interval through out the day.
@@ -27,14 +29,6 @@ Using the above data, I have performed the following steps to analyze the data a
     library(graphics)
     library(stats)
     library(ggplot2)
-```
-
-```
-## Use suppressPackageStartupMessages() to eliminate package startup
-## messages.
-```
-
-```r
     library(xtable)
     library(chron)
     library(lattice)
