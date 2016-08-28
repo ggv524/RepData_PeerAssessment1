@@ -5,8 +5,6 @@ output:
     keep_md: true
 ---
 
-
-
 ### Assignment Description
 
 This assignment uses data collected from a personal activity monitoring device accumulated at 5 minute intervals over a two month span.  The data was collected anonymously from a single individual during October and November, 2012.  The data includes the number of steps taken at each interval through out the day.
@@ -23,7 +21,7 @@ It is also available when forked from the following GitHub site: <http://github.
 Using the above data, I have performed the following steps to analyze the data and answer the project questions:
 
 ## Loading and preprocessing the data
-###Preparation Step: Load all libraries to be used in this project
+### Preparation Step: Load all libraries to be used in this project
 
 ```r
     library(graphics)
@@ -34,7 +32,7 @@ Using the above data, I have performed the following steps to analyze the data a
     library(lattice)
 ```
 
-###Step 1: Code for reading in the dataset and/or processing the data
+### Step 1: Code for reading in the dataset and/or processing the data
 If the data directory doesn't exist, create it.  Then, if the activity.zip file 
 isn't present, go get it from the file that was previously downloaded from the 
 GitBash Master directory and placed into the working directory. Unzip the file, then 
@@ -57,7 +55,7 @@ read the .csv file into the activity data frame.  Run the str() command to check
 ##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...
 ```
 ## What is mean total number of steps taken per day?
-###Step 2: Histogram of the total number of steps taken each day  
+### Step 2: Histogram of the total number of steps taken each day  
 Calculate (i.e. sum) the total number of steps taken per day, then create a histogram of the data, while ignoring the missing values in the dataset:
 
 
@@ -71,7 +69,7 @@ Calculate (i.e. sum) the total number of steps taken per day, then create a hist
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
 
-###Step 3: Mean and median number of steps taken each day  
+### Step 3: Mean and median number of steps taken each day  
 Calculate the mean and the median of Steps.by.day$x:
 
 
@@ -95,7 +93,7 @@ Calculate the mean and the median of Steps.by.day$x:
 ## 1        10765
 ```
 ## What is the average daily activity pattern?
-###Step 4: Time Series plot of the average number of steps taken  
+### Step 4: Time Series plot of the average number of steps taken  
 Make a time series plot (i.e type = "l") of the 5-minute interval (x-axis) 
 and the average number of steps taken, averaged across all days (y-axis):
 
@@ -108,7 +106,7 @@ and the average number of steps taken, averaged across all days (y-axis):
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
 
-###Step 5: The 5-minute interval that, on average, contains the maximum number of steps  
+### Step 5: The 5-minute interval that, on average, contains the maximum number of steps  
 Using the max() function to determine which interval, on average across all the days in the dataset, contains the maximum number of steps:
 
 
@@ -120,7 +118,7 @@ Using the max() function to determine which interval, on average across all the 
 ## [1] 835
 ```
 ## Imputing missing values
-###Step 6: Code to describe and show a strategy for imputing missing data  
+### Step 6: Code to describe and show a strategy for imputing missing data  
 First, calculate the total number of missing values in the dataset:
 
 
@@ -178,7 +176,7 @@ Finally, verify the NA_count again to confirm there are no longer any NA values 
 ## [1] 0
 ```
 
-###Step 7: Histogram of the total number of steps taken each day after missing values are imputed  
+### Step 7: Histogram of the total number of steps taken each day after missing values are imputed  
 Aggregate the steps again now that all the NA step values have been replaced with imputed values, then create a new histogram:
 
 
@@ -219,7 +217,7 @@ Calculate the mean and median number of steps taken each day for comparison with
 These new values are slightly different than the estimates from the first part of the assignment.  The mean has basically stayed the same. The median has increased slightly.
 
 ## Are there differences in activity patterns between weekdays and weekends?
-###Step 8: Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
+### Step 8: Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 
 First, add a new factor variable to the activity2 data frame to idenify weekend vs. weekday dates:
 
