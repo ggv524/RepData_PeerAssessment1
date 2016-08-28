@@ -27,6 +27,14 @@ Using the above data, I have performed the following steps to analyze the data a
     library(graphics)
     library(stats)
     library(ggplot2)
+```
+
+```
+## Use suppressPackageStartupMessages() to eliminate package startup
+## messages.
+```
+
+```r
     library(xtable)
     library(chron)
     library(lattice)
